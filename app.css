@@ -1,0 +1,17 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-container {
+    display: flex;
+}
+
+.left-column {
+    width: 50%;
+}
+
+.form input[type=text] {
+    padding: 5px;
+    display: block;
+    margin-bottom: 10px;
+}
+
