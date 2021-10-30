@@ -1,6 +1,38 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.center {
+    text-align: center;
+}
+
+/* --------------------------------- Page Layout --------------------------------*/
+.main-container {
+    display: flex;
+}
+.aside {
+    width: 200px;
+}
+.main-content {
+    flex: 1;
+    margin-left: 50px;
+}
+
+.main-content h2 {
+    background-color: lightgray;
+    padding: 5px;
+}
+/* --------------------------------- Sidebar ----------------------------------- */
+nav a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    background-color: lightgray;
+}
+
+nav a:hover {
+    background-color: lightblue;
+}
+/* --------------------------------- Form Layout --------------------------------*/
 .form-container {
     display: flex;
 }
