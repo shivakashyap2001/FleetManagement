@@ -20,58 +20,58 @@
                     <div class="form-container">
                         <div class="left-column">
                             <div>
-                                <label for="owner_name"> Owner Name</labe.l>
-                                    <input type="text" name="owner-name" id="Owner Name">
+                                <label for="owner"> Owner</label>
+                                    <input type="text" name="owner" id="Owner">
                             </div>
                             <div>
-                                <label for="company_name"> Company Name</label>
-                                <input type="text" name="Company Name" id="company_name">
+                                <label for="owner_type"> Owner Type</label>
+                                <input type="text" name="owner_type" id="company_name">
                             </div>
                             <div>
-                                <label for="type_of_vehicle"> Type Of Vehicle</label>
-                                <input type="text" name="type of vehicle" id="Type_Of_Vehicle">
+                                <label for="gender"> Gender</label>
+                                <input type="text" name="gender" id="gender">
                             </div>
                             <div>
-                                <label for="industry"> Industry</label>
-                                <input type="text" name="industry" id="Industry">
+                                <label for="date_of_birth"> Date Of Birth</label>
+                                <input type="text" name="date_of_birth" id="date_of_birth">
                             </div>
                             <div>
-                                <label for="founded"> Founded</label>
-                                <input type="text" name="founded" id="Founded">
+                                <label for="contact_number"> Contact Number</label>
+                                <input type="text" name="contact_number" id="contact_number">
                             </div>
                             <div>
-                                <label for="founder"> Founder</label>
-                                <input type="text" name="Founder" id="founder">
+                                <label for="alternate_contact_number"> Alternate Contact Number</label>
+                                <input type="text" name="alternate_contact_number" id="alternate_contact_number">
                             </div>
                             <div>
-                                <label for="headquarter">Headquarter</label>
-                                <input type="text" name="Headquarters" id="headquarter">
+                                <label for="email">Email</label>
+                                <input type="text" name="email" id="email">
                             </div>
                             <div>
-                                <label for="field1">Field 1</label>
-                                <input type="text" name="" id="field1">
+                                <label for="address">Address</label>
+                                <input type="text" name="address" id="address">
                             </div>
                             <div>
-                                <label for="field1">Field 1</label>
-                                <input type="text" name="" id="field1">
+                                <label for="id_proof_no">Id Proof No</label>
+                                <input type="text" name="id_proof_no" id="id_proof_no">
                             </div>
                         </div>
                         <div class="right-column">
                             <div>
-                                <label for="field2">Field 2</label>
-                                <input type="text" name="" id="field2">
+                                <label for="account_number">Account Number</label>
+                                <input type="text" name="account_number" id="account_number">
                             </div>
                             <div>
-                                <label for="field1">Field 1</label>
-                                <input type="text" name="" id="field1">
+                                <label for="account_holder_name">Account Holder Name</label>
+                                <input type="text" name="account_holder_name" id="account_holder_name">
                             </div>
                             <div>
-                                <label for="field1">Field 1</label>
-                                <input type="text" name="" id="field1">
+                                <label for="upi_id">Upi Id</label>
+                                <input type="text" name="upi_id" id="upi_id">
                             </div>
                             <div>
-                                <label for="field1">Field 1</label>
-                                <input type="text" name="" id="field1">
+                                <label for="upload_address_and_id_proof">Upload Address And Id Proof</label>
+                                <input type="text" name="upload_address_and_id_proof" id="upload_address_and_id_proof">
                             </div>
                         </div>
 
