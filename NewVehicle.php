@@ -32,11 +32,11 @@
                                 <input type="text" name="chassic_number" id="chassic_number">
                             </div>
                             <div>
-                                <label for="colour_and_vehicle_type">Colour And Vehicle Type</label>
-                                <input type="text" name="colour_and_vehicle_type" id="colour_and_vehicle_type">
+                                <label for="colour">Colour</label>
+                                <input type="text" name="colour" id="colour">
                             </div>
                             <div>
-                                <label for="seating_capaity"> Seatng capacity</label>
+                                <label for="seating_capaity"> Seating capacity</label>
                                 <input type="text" name="seating_capacity" id="seating_capacity">
                             </div>
                             <div>
@@ -45,34 +45,12 @@
                             </div>
                             <div>
                                 <label for="owner_name">Owner Name</label>
-                                <input type="text" name="" id="field1">
+                                <input type="text" name="owner_name" id="owner_name">
                             </div>
-                            <div>
-                                <label for="field1">Field 1</label>
-                                <input type="text" name="" id="field1">
-                            </div>
-                            <div>
-                                <label for="field1">Field 1</label>
-                                <input type="text" name="" id="field1">
-                            </div>
+
                         </div>
                         <div class="right-column">
-                            <div>
-                                <label for="field2">Field 2</label>
-                                <input type="text" name="" id="field2">
-                            </div>
-                            <div>
-                                <label for="field1">Field 1</label>
-                                <input type="text" name="" id="field1">
-                            </div>
-                            <div>
-                                <label for="field1">Field 1</label>
-                                <input type="text" name="" id="field1">
-                            </div>
-                            <div>
-                                <label for="field1">Field 1</label>
-                                <input type="text" name="" id="field1">
-                            </div>
+
                         </div>
 
                     </div>

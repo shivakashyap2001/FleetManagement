@@ -16,12 +16,12 @@
             </aside>
             <div class="main-content">
                 <h2>New Owner</h2>
-                <form class="form" action="NewDriverScript.php" method="POST">
+                <form class="form" action="NewCustomerScript.php" method="POST">
                     <div class="form-container">
                         <div class="left-column">
                             <div>
-                                <label for="driver_name"> Driver Name</label>
-                                <input type="text" name="driver_name" id="driver_name">
+                                <label for="customer_name"> customer Name</label>
+                                <input type="text" name="customer_name" id="customer_name">
                             </div>
                             <div>
                                 <label for="gender"> Gender</label>
@@ -44,23 +44,15 @@
                                 <input type="text" name="email" id="email">
                             </div>
                             <div>
-                                <label for="address">Address</label>
-                                <input type="text" name="address" id="address">
+                                <label for="pick_up_point">Pick Up Point</label>
+                                <input type="text" name="pick_up_point" id="pick_up_point">
                             </div>
                             <div>
-                                <label for="id_proof_no">Id Proof No</label>
-                                <input type="text" name="id_proof_no" id="id_proof_no">
+                                <label for="drop_point">Drop_point</label>
+                                <input type="text" name="drop_point" id="drop_point">
                             </div>
                         </div>
                         <div class="right-column">
-                            <div>
-                                <label for="driving_licence_number">Driving Licence Number</label>
-                                <input type="text" name="driving_licence_number" id="driving_licence_number">
-                            </div>
-                            <div>
-                                <label for="upload_address_and_id_proo">Upload Address And Id Proof</label>
-                                <input type="text" name="upload_address_and_id_proof" id="upload_address_and_id_proof">
-                            </div>
                         </div>
 
                     </div>

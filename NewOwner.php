@@ -16,12 +16,12 @@
             </aside>
             <div class="main-content">
             <h2>New Owner</h2>
-                <form class="form" action="NewVehicleScript.php" method="POST">
+                <form class="form" action="NewOwnerScript.php" method="POST">
                     <div class="form-container">
                         <div class="left-column">
                             <div>
-                                <label for="owner"> Owner</label>
-                                    <input type="text" name="owner" id="Owner">
+                                <label for="owner_name"> Owner Name</label>
+                                    <input type="text" name="owner_name" id="Owner">
                             </div>
                             <div>
                                 <label for="owner_type"> Owner Type</label>
@@ -33,7 +33,7 @@
                             </div>
                             <div>
                                 <label for="date_of_birth"> Date Of Birth</label>
-                                <input type="text" name="date_of_birth" id="date_of_birth">
+                                <input type="date" name="date_of_birth" id="date_of_birth">
                             </div>
                             <div>
                                 <label for="contact_number"> Contact Number</label>
@@ -65,6 +65,11 @@
                                 <label for="account_holder_name">Account Holder Name</label>
                                 <input type="text" name="account_holder_name" id="account_holder_name">
                             </div>
+                            <div>
+                                <label for="ifsc_code">Ifsc Code</label>
+                                <input type="text" name="ifsc_code" id="ifsc_code">
+                            </div>
+
                             <div>
                                 <label for="upi_id">Upi Id</label>
                                 <input type="text" name="upi_id" id="upi_id">

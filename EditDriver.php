@@ -1,3 +1,36 @@
+<?php
+$driver_id = null;
+$driver_name = null;
+$gender = null;
+$date_of_birth = null;
+$contact_number = null;
+$alternate_contact_number = null;
+$email = null;
+$address = null;
+$id_proof_no = null;
+$upload_address_and_id_proof = null;
+
+if (isset($_POST['search'])) {
+    $driver_id = $_POST['driver_id_search'];
+    include 'connect.php';
+    $sql = "SELECT * FROM driver WHERE driver_id=$driver_id";
+    $result = $con->query($sql);
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        $driver_name = $row['driver_name'];
+        $gender = $row['gender'];
+        $date_of_birth = $row['date_of_birth'];
+        $contact_number = $row['contact_number'];
+        $alternate_contact_number = $row['alternate_contact_number'];
+        $email = $row['email'];
+        $address = $row['address'];
+        $id_proof_no = $row['id_proof_no'];
+        $upload_address_and_id_proof = $row['upload_address_and_id_proof'];
+    } else {
+        echo "<script>alert('No Records Found!')</script>";
+    }
+}
+?>
 <html>
 
 <head>
@@ -15,17 +48,29 @@
                 <?php include 'aside.html' ?>
             </aside>
             <div class="main-content">
-                <h2>New Owner</h2>
-                <form class="form" action="NewDriverScript.php" method="POST">
+                <h2>Edit Driver</h2>
+                <form action="" method="post" class="form">
+                    <div class="form-container">
+                        <div class="left-column">
+                            <div>
+                                <label for="driver_id"> Driver Id</label>
+                                <input type="text" name="driver_id_search" id="driver_id_search" value="<?= $driver_id ?>">
+                                <button name="search">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="form" action="EditDriverScript.php" method="POST">
+                    <input type="hidden" name="driver_id" value="<?= $driver_id ?>">
                     <div class="form-container">
                         <div class="left-column">
                             <div>
                                 <label for="driver_name"> Driver Name</label>
-                                <input type="text" name="driver_name" id="driver_name">
+                                <input type="text" name="driver_name" id="driver_id" value="<?= $driver_name ?>">
                             </div>
                             <div>
                                 <label for="gender"> Gender</label>
-                                <input type="text" name="gender" id="gender">
+                                <input type="text" name="gender" id="gender" value="<?= $gender ?>">
                             </div>
                             <div>
                                 <label for="date_of_birth"> Date Of Birth</label>
@@ -54,11 +99,7 @@
                         </div>
                         <div class="right-column">
                             <div>
-                                <label for="driving_licence_number">Driving Licence Number</label>
-                                <input type="text" name="driving_licence_number" id="driving_licence_number">
-                            </div>
-                            <div>
-                                <label for="upload_address_and_id_proo">Upload Address And Id Proof</label>
+                                <label for="upload_address_and_id_proof">Upload Address And Id Proof</label>
                                 <input type="text" name="upload_address_and_id_proof" id="upload_address_and_id_proof">
                             </div>
                         </div>
@@ -66,6 +107,7 @@
                     </div>
                     <div>
                         <button>Submit</button>
+                        <button name="delete">Delete</button>
                         <button type="reset">Reset</button>
                     </div>
                 </form>

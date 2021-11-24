@@ -41,7 +41,7 @@ nav a:hover {
     width: 50%;
 }
 
-.form input[type=text] {
+.form input {
     padding: 5px;
     display: block;
     margin-bottom: 10px;
