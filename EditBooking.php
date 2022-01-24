@@ -1,25 +1,31 @@
 <?php
-$customer_id = null;
+$booking_id = null;
 $customer_name = null;
 $gender = null;
-$date_of_birth = null;
 $contact_number = null;
 $alternate_contact_number = null;
 $email = null;
+$date = null;
+$time = null;
+$source = null;
+$destination = null;
 
 if (isset($_POST['search'])) {
-    $customer_id = $_POST['customer_id_search'];
+    $booking_id = $_POST['booking_id_search'];
     include 'connect.php';
-    $sql = "SELECT * FROM customer WHERE customer_id=$customer_id";
+    $sql = "SELECT * FROM customer WHERE booking_id=$booking_id";
     $result = $con->query($sql);
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         $customer_name = $row['customer_name'];
         $gender = $row['gender'];
-        $date_of_birth = $row['date_of_birth'];
         $contact_number = $row['contact_number'];
         $alternate_contact_number = $row['alternate_contact_number'];
         $email = $row['email'];
+        $date = $row['date'];
+        $time = $row['time'];
+        $source = $row['source'];
+        $destination = $row['destination'];
     } else {
         echo "<script>alert('No Records Found!')</script>";
     }
@@ -43,20 +49,20 @@ if (isset($_POST['search'])) {
                 <?php include 'aside.html' ?>
             </aside>
             <div class="main-content">
-                <h2>Edit Customer</h2>
+                <h2>Edit Booking</h2>
                 <form action="" method="post" class="form">
                     <div class="form-container">
                         <div class="left-column">
                             <div>
-                                <label for="customer_id"> Customer Id</label>
-                                <input type="text" name="customer_id_search" id="customer_id_search" value="<?= $customer_id ?>">
+                                <label for="Booking_id"> Booking Id</label>
+                                <input type="text" name="booking_id_search" id="booking_id_search" value="<?= $booking_id ?>">
                                 <button name="search">Search</button>
                             </div>
                         </div>
                     </div>
                 </form>
-                <form class="form" action="EditCustomerScript.php" method="POST">
-                    <input type="hidden" name="customer_id" value="<?= $customer_id ?>" value="<?= $customer_id ?>">
+                <form class="form" action="EditBookingScript.php" method="POST">
+                    <input type="hidden" name=booking_id" value="<?= $booking_id ?>" value="<?= $booking_id ?>">
                     <div class="form-container">
                         <div class="left-column">
                             <div>
@@ -66,10 +72,6 @@ if (isset($_POST['search'])) {
                             <div>
                                 <label for="gender"> Gender</label>
                                 <input type="text" name="gender" id="gender" value="<?= $gender ?>">
-                            </div>
-                            <div>
-                                <label for="date_of_birth"> Date Of Birth</label>
-                                <input type="date" name="date_of_birth" id="date_of_birth" value="<?= $date_of_birth ?>">
                             </div>
                             <div>
                                 <label for="contact_number"> Contact Number</label>
@@ -82,6 +84,22 @@ if (isset($_POST['search'])) {
                             <div>
                                 <label for="email">Email</label>
                                 <input type="text" name="email" id="email" value="<?= $email ?>">
+                            </div>
+                            <div>
+                                <label for="date">Date</label>
+                                <input type="text" name="date" id="date" value="<?= $date ?>">
+                            </div>
+                            <div>
+                                <label for="time">Time</label>
+                                <input type="text" name="time" id="time" value="<?= $time ?>">
+                            </div>
+                            <div>
+                                <label for="source">Source</label>
+                                <input type="text" name="source" id="source" value="<?= $source ?>">
+                            </div>
+                            <div>
+                                <label for="destination">Destination</label>
+                                <input type="text" name="destination" id="destination" value="<?= $destination ?>">
                             </div>
                         </div>
                         <div class="right-column">

@@ -2,6 +2,7 @@
 
 <head>
     <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
                 <?php include 'aside.html' ?>
             </aside>
             <div class="main-content">
-                <h2>New Owner</h2>
+                <h2>New Customer</h2>
                 <form class="form" action="NewCustomerScript.php" method="POST">
                     <div class="form-container">
                         <div class="left-column">
@@ -43,14 +44,7 @@
                                 <label for="email">Email</label>
                                 <input type="text" name="email" id="email">
                             </div>
-                            <div>
-                                <label for="pick_up_point">Pick Up Point</label>
-                                <input type="text" name="pick_up_point" id="pick_up_point">
-                            </div>
-                            <div>
-                                <label for="drop_point">Drop_point</label>
-                                <input type="text" name="drop_point" id="drop_point">
-                            </div>
+                           
                         </div>
                         <div class="right-column">
                         </div>
